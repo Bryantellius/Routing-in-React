@@ -1,5 +1,6 @@
 import React, { Component, Fragment } from 'react';
-import { BrowserRouter as Router, Link, Switch, Route } from 'react-router-dom';
+import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
+import NavBar from './NavBar';
 import Home from './Home';
 import Films from './Films';
 import People from './People';
@@ -9,9 +10,7 @@ class App extends Component {
         return (
             <Router>
                 <Fragment>
-                    <Link to='/'><button>Home</button></Link>
-                    <Link to='/films'><button>Films</button></Link>
-                    <Link to='/people'><button>People</button></Link>
+                    <NavBar />
                     <Switch>
                         <Route exact path='/' component={Home}/>
                         <Route path='/films' component={Films}/>
