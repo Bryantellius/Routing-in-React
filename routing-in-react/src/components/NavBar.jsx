@@ -4,16 +4,28 @@ import { Link } from 'react-router-dom';
 class NavBar extends Component {
     render() {
         return (
-            <nav className='row py-3 border'>
-                <ul className="nav">
-                    <li className="nav-item mx-3">
-                        <Link to='/' className='nav-link'>Home</Link>
+            <nav className='row py-3'>
+                <ul className="nav align-items-end">
+                    <li>
+                        <img src='logo.png' alt='Studio Ghibli Logo' className='img mx-2' height='50px'></img>
                     </li>
                     <li className="nav-item mx-3">
-                        <Link to='/films' className='nav-link'>Films</Link>
+                        <Link to='/' className='nav-link text-dark'>Home</Link>
                     </li>
                     <li className="nav-item mx-3">
-                        <Link to='/people' className='nav-link'>People</Link>
+                        <Link to='/films' className='nav-link text-dark'>Films</Link>
+                    </li>
+                    <li className="nav-item mx-3">
+                        <Link to='/people' className='nav-link text-dark'>People</Link>
+                    </li>
+                    <li className="nav-item mx-3">
+                        <Link to='/locations' className='nav-link text-dark'>Locations</Link>
+                    </li>
+                    <li className="nav-item mx-3">
+                        <Link to='/species' className='nav-link text-dark'>Species</Link>
+                    </li>
+                    <li className="nav-item mx-3">
+                        <Link to='/vehicles' className='nav-link text-dark'>Vehicles</Link>
                     </li>
                 </ul>
             </nav>

@@ -1,18 +1,16 @@
 import React, { Component } from 'react';
-import FilmCards from './FilmCards';
+import SpeciesCards from './SpeciesCards';
 
-class Films extends Component {
+class Species extends Component {
     state = {
-        filmsArr: [],
-        hasData: false
+        speciesArr: []
     }
     componentDidMount() {
-        fetch('https://ghibliapi.herokuapp.com/films')
+        fetch('https://ghibliapi.herokuapp.com/species')
             .then(response => response.json())
             .then(data => {
                 this.setState({
-                    filmsArr: data,
-                    hasData: true
+                    speciesArr: data
                 })
             })
             .catch(err => console.log(err));
@@ -21,11 +19,11 @@ class Films extends Component {
     render() {
         return (
             <React.Fragment>
-                <h1 className='my-3'>Studio Ghibli Films</h1>
-                <FilmCards arr={this.state.filmsArr} />
+                <h1 className='my-3'>Studio Ghibli Species</h1>
+                <SpeciesCards arr={this.state.speciesArr} />
             </React.Fragment>
         )
     }
 }
 
-export default Films;
+export default Species;
