@@ -2,11 +2,11 @@ import React, { Component, Fragment } from 'react';
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 import NavBar from './NavBar';
 import Home from './Home';
-import Films from './Films';
-import People from './People';
-import Locations from './Locations';
-import Species from './Species';
-import Vehicles from './Vehicles';
+import Films from './Film Components/Films';
+import People from './People Components/People';
+import Locations from './Location Components/Locations';
+import Species from './Species Components/Species';
+import Vehicles from './Vehicle Components/Vehicles';
 import Footer from './Footer';
 
 class App extends Component {
