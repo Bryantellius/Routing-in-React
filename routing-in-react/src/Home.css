@@ -1,8 +1,8 @@
 #jumboDiv {
-    background-image: url('Laptuna.jpg');
-    background-size: cover;
-    height: 500px;
+  background-image: url("Laptuna.jpg");
+  background-size: cover;
+  height: 500px;
 }
 .container-fluid {
-    height: 500px;
+  height: 500px;
 }
